@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "Tic Tac Toe: Valentines Day",
+    "slug": "tic-tac-toe-valentines-day",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "tic-tac-toe-valentines-day",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFB6C1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.christianappempire.tictactoevalentinesday",
+      "buildNumber": "1",
+      "infoPlist": {
+        "CFBundleDisplayName": "Tic Tac Toe: Valentines Day",
+        "NSUserTrackingUsageDescription": "This allows us to show relevant ads and support free gameplay. You can change this anytime in Settings.",
+        "NSUserNotificationsUsageDescription": "Receive optional daily Bible verse reminders at 7 AM Pacific.",
+        "SKAdNetworkItems": [
+          { "SKAdNetworkIdentifier": "cstr6suwn9.skadnetwork" }
+        ]
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFB6C1"
+      },
+      "package": "com.christianappempire.tictactoevalentinesday",
+      "permissions": [
+        "android.permission.VIBRATE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-tracking-transparency",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#8B0000"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3002325591150738~9355274122",
+          "iosAppId": "ca-app-pub-3002325591150738~9833565606"
+        }
+      ],
+      "expo-iap"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "tic-tac-toe-valentines-day"
+      }
+    }
+  }
+}
